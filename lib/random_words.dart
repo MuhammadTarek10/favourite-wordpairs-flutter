@@ -61,8 +61,9 @@ class RandomWordState extends State<RandomWords>{
         builder: (BuildContext context){
             final Iterable<ListTile> tiles = _savedWords.map((WordPair pair) {
                 return ListTile(
-                  title: Text(pair.asPascalCase, 
-                  style: TextStyle(fontSize: 16.0)
+                  title: Text(
+                    pair.asPascalCase, 
+                    style: TextStyle(fontSize: 16.0)
                   )
                 );
             });
